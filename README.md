@@ -1,5 +1,5 @@
 # dxface
-> **Python interface for AutoCAD DXF.**
+**Python interface for AutoCAD DXF.**
 
 ## Installation
 Using **pip**:

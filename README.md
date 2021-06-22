@@ -7,16 +7,6 @@ Using **pip**:
 $ pip install dxface
 ```
 
-## Supported Objects
-
-The following DXF graphical objects are supported:
-
-- POLYLINE
-- LWPOLYLINE
-- CIRCLE
-- ARC
-- LINE
-
 ## Usage
 Import the `Entities` object.
 
@@ -53,3 +43,11 @@ lines = entities.lines
 ### UML diagram of `Entities` object
 
 ![Entities](https://github.com/dhruvnps/dxface/blob/master/images/uml.png?raw=true)
+
+## Supported Objects
+
+- *POLYLINE*
+- *LWPOLYLINE*
+- *CIRCLE*
+- *ARC*
+- *LINE*

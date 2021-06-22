@@ -46,8 +46,10 @@ lines = entities.lines
 
 ## Supported Objects
 
-- *POLYLINE*
-- *LWPOLYLINE*
-- *CIRCLE*
-- *ARC*
-- *LINE*
+The following DXF graphical objects are supported:
+
+- POLYLINE
+- LWPOLYLINE
+- CIRCLE
+- ARC
+- LINE

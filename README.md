@@ -7,9 +7,9 @@ Using **pip**:
 $ pip install dxface
 ```
 
-## DXF Graphical Objects
+## Supported Objects
 
-The following DXF objects are supported:
+The following DXF graphical objects are supported:
 
 - POLYLINE
 - LWPOLYLINE

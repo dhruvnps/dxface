@@ -1,5 +1,5 @@
 # dxface
-Python interface for AutoCAD DXF.
+> Python interface for AutoCAD DXF.
 
 ## Installation
 Using **pip**:
@@ -9,7 +9,7 @@ $ pip install dxface
 
 ## Supported Objects
 
-The following DXF graphical objects are supported:
+> The following DXF graphical objects are supported:
 
 - POLYLINE
 - LWPOLYLINE

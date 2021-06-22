@@ -7,6 +7,16 @@ Using **pip**:
 $ pip install dxface
 ```
 
+## DXF Graphical Objects
+
+The following DXF objects are supported:
+
+- POLYLINE
+- LWPOLYLINE
+- CIRCLE
+- ARC
+- LINE
+
 ## Usage
 Import the `Entities` object.
 

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: dxface
-Version: 0.0.1
+Version: 0.0.3
 Summary: Python interface for AutoCAD DXF
 Home-page: https://github.com/dhruvnps/dxface
 Author: dhruvnps

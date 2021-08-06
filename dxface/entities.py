@@ -51,7 +51,7 @@ class Entities:
 
             line += 1
 
-    def svg(self, g=None, start=True, end=True):
+    def svg(self, g=None, start=True, end=True, viewbox=True):
         '''
         construct an svg document as a string
         using the objects from the entity lists
@@ -78,12 +78,13 @@ class Entities:
             svg += ''.join(map(lambda x: x.svg_shape(color), li))
 
         # add script to set svg viewbox to fit content
-        svg += ('<script>\n' +
-                'const a = document.querySelector("svg");\n' +
-                'const b = a.getBBox();\n' +
-                'a.setAttribute("viewBox",' +
-                '[b.x,b.y,b.width,b.height]);\n' +
-                '</script>\n')
+        if viewbox:
+            svg += ('<script>\n' +
+                    'const a = document.querySelector("svg");\n' +
+                    'const b = a.getBBox();\n' +
+                    'a.setAttribute("viewBox",' +
+                    '[b.x,b.y,b.width,b.height]);\n' +
+                    '</script>\n')
 
         # return with closing tags
         svg += ('</g>\n' if g else '')

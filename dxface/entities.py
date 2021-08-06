@@ -51,7 +51,7 @@ class Entities:
 
             line += 1
 
-    def svg(self, g=None, script=None, start=True, end=True):
+    def svg(self, g=None, start=True, end=True):
         '''
         construct an svg document as a string
         using the objects from the entity lists
@@ -61,10 +61,6 @@ class Entities:
         svg = ('<svg xmlns="http://www.w3.org/2000/svg" ' +
                'xmlns:xlink="http://www.w3.org/1999/xlink">\n'
                if start else '')
-
-        # if script name is present add script reference to svg
-        if script is not None:
-            svg += '<script xlink:href="{}" />\n'.format(script)
 
         # data list of object lists
         data = ((self.polylines, 'blue'),
@@ -80,6 +76,14 @@ class Entities:
         # add svg shape of each object from each object list
         for li, color in data:
             svg += ''.join(map(lambda x: x.svg_shape(color), li))
+
+        # add script to set svg viewbox to fit content
+        svg += ('<script>\n' +
+                'const a = document.querySelector("svg");\n' +
+                'const b = a.getBBox();\n' +
+                'a.setAttribute("viewBox",' +
+                '[b.x,b.y,b.width,b.height]);\n' +
+                '</script>\n')
 
         # return with closing tags
         svg += ('</g>\n' if g else '')

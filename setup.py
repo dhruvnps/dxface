@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dxface",
-    version="0.0.4",
+    version="0.0.5",
     author="dhruvnps",
     description="Python interface for AutoCAD DXF",
     long_description=long_description,

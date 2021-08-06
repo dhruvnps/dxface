@@ -4,7 +4,6 @@ dxface/__init__.py
 dxface/arc.py
 dxface/circle.py
 dxface/entities.py
-dxface/hatch.py
 dxface/line.py
 dxface/lwpolyline.py
 dxface/polyline.py

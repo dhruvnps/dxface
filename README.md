@@ -51,6 +51,6 @@ arcs = entities.arcs
 lines = entities.lines
 ```
 
-### UML diagram of `Entities` object
+### Structure of `Entities` object
 
 ![Entities](https://github.com/dhruvnps/dxface/blob/master/images/uml.png?raw=true)
